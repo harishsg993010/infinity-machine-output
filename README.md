@@ -7,10 +7,11 @@ compilers, hardware design and astronomy. Each result with a finite certificate 
 checks it. Every certificate is taken unchanged from its public deposit, and generator scripts turn it into a Lean
 data file.
 
-> 📝 Paper: *Infinity Machine: a self-improving AI agent for research* (H. Santhanalakshmi Ganesan, 2026), arXiv preprint in preparation.
+> 📝 Paper: *Infinity Machine: a self-improving AI agent for research* (H. Santhanalakshmi Ganesan, 2026), [arXiv:2610.35579](https://arxiv.org/abs/2610.35579).
 
 ## News
 
+- **2026-10-26**: 📝 **Paper on arXiv:** [arXiv:2610.35579](https://arxiv.org/abs/2610.35579).
 - **2026-10-26**: 🧾 **Lean 4 formalizations of five results**, all building from a clean checkout with no `sorry`:
   - **Golay preparation:** the 44-gate, depth-6 circuit provably prepares the `[[23,1,7]]` Golay logical zero.
   - **Stabilizer rank:** the 10-term decomposition of `|T⟩^⊗7` is exact over `ℤ[ζ₈]`.
@@ -196,7 +197,9 @@ If you use these results, please cite:
   title        = {Infinity Machine: a self-improving {AI} agent for research},
   author       = {Santhanalakshmi Ganesan, Harish},
   year         = {2026},
-  howpublished = {\url{https://github.com/harishsg993010/infinity-machine-output}},
+  eprint        = {2610.35579},
+  archivePrefix = {arXiv},
+  url           = {https://arxiv.org/abs/2610.35579},
 }
 ```
 
