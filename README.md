@@ -22,6 +22,11 @@ certificate is taken unchanged from its public deposit, and generator scripts tu
 - **2026-10-26**: 🤖 **Three fully autonomous runs.** Each went from a plain-text goal to a verified report with no human
   step, for $7.59–$9.97 per run. All three ended in honest ties with the public record (see
   [below](#fully-autonomous-runs)).
+- **2026-10-25**: 🔭 **An unconfirmed planet candidate.** In open-ended discovery mode on TESS photometry of 7,474 nearby M
+  dwarfs, Infinity Machine surfaced a **1.6 R⊕ transiting candidate on a 5.31-day orbit around G 249-11** (TIC 417732194,
+  29 pc). The evidence is about 3σ, and two false-positive scenarios remain viable. Preprint:
+  [doi:10.5281/zenodo.23651676](https://doi.org/10.5281/zenodo.23651676); details in
+  [`discoveries/tess_g249_11/`](discoveries/tess_g249_11/).
 - **2026-10-25**: 🧭 **SABRE routing deposited** ([doi:10.5281/zenodo.23651580](https://doi.org/10.5281/zenodo.23651580)):
   **12,087** added gates on the 26-circuit SABRE suite, against 68,559 for SABRE.
 - **2026-10-20**: ⚛️ **Four quantum-information records**, each deposited on Zenodo:
@@ -47,12 +52,16 @@ column says what the proofs in this repository cover.
 | | same, 15 circuits shared with later work | added gates ↓ | 13,044 <sup>g</sup> | **9,312** | ✅ <sup>‡</sup> |
 | **Hardware** | [`int8_systolic_tile`](InfinityMachineOutput/Chip/) | energy per MAC ↓ | 578.9 fJ <sup>h</sup> | **128.8 fJ** | ✅ arithmetic <sup>§</sup> |
 | **AI** | AdderBoard smallest adder | parameters ↓ | 6 (disputed), 10 strict <sup>i</sup> | **5** | — |
+| **Astronomy** | [`tess_g249_11`](discoveries/tess_g249_11/) ([Zenodo](https://doi.org/10.5281/zenodo.23651676)) | new transiting candidates ↑ | — | **1 candidate, ~3σ, unconfirmed** | — <sup>¶</sup> |
 
 <sup>†</sup> Not formalized:
 * **Qubit threshold:** the certificate is a 45-qubit exact computation through a Schur–Weyl reduction, using a
   third-party certifier.
 * **Private information:** the witnesses are 8-qubit ensembles certified at 30 digits.
 
+<sup>¶</sup> An observational, statistical result: G 249-11 (TIC 417732194), P = 5.307425 d, Rp = 1.61 ± 0.09 R⊕. It is
+not a confirmed planet, and there is no finite certificate to formalize. Two false positives remain viable: a bound
+eclipsing companion, and a G = 17.2 star 20″ away.<br>
 <sup>‡</sup> Covered by the same replay theorem. The per-circuit split comes from the deposit.<br>
 <sup>§</sup> Lean proves the MAC arithmetic exact for all inputs. The energy figure is a physical measurement, not a theorem
 (see [Lean verification](#lean-verification)).
@@ -172,6 +181,7 @@ Mathlib `v4.36.0-rc1`: 18,136 jobs in 27 min.
 ```
 InfinityMachineOutput/   Lean sources (Golay, StabRank, Qutrit, Sabre, Chip)
 data/                    certificates from the deposits, plus the chip RTL
+discoveries/             results with no finite certificate (TESS planet candidate)
 scripts/gen_*.py         deterministic generators: data/ -> Lean data files
 tests/                   independent cross-checks
 ```
