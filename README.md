@@ -28,7 +28,7 @@ data file.
   29 pc). The evidence is about 3σ, and two false-positive scenarios remain viable. Preprint:
   [doi:10.5281/zenodo.23651676](https://doi.org/10.5281/zenodo.23651676); details in
   [`discoveries/tess_g249_11/`](discoveries/tess_g249_11/).
-- **2026-10-25**: 🧭 **SABRE routing deposited** ([doi:10.5281/zenodo.23651580](https://doi.org/10.5281/zenodo.23651580)):
+- **2026-10-25**: 🧭 **SABRE routing deposited** ([doi:10.5281/zenodo.23651579](https://doi.org/10.5281/zenodo.23651579)):
   **12,087** added gates on the 26-circuit SABRE suite, against 68,559 for SABRE.
 - **2026-10-20**: ⚛️ **Four quantum-information records**, each deposited on Zenodo:
   - **qubit depolarizing threshold:** `p = 0.064966`;
@@ -49,7 +49,7 @@ column says what the proofs in this repository cover.
 | | [`golay_preparation`](InfinityMachineOutput/Golay/) ([Zenodo](https://doi.org/10.5281/zenodo.23509367)) | (two-qubit gates, depth) ↓ | (44, 8), (45, 7) <sup>c</sup> | **(44, 6)** | ✅ |
 | | [`stabilizer_rank_T7`](InfinityMachineOutput/StabRank/) ([Zenodo](https://doi.org/10.5281/zenodo.23525753)) | `χ(T^⊗7)` upper bound ↓ | 12 <sup>d</sup> | **10** | ✅ |
 | | depolarizing private information ([Zenodo](https://doi.org/10.5281/zenodo.23516558)) | explicit finite-`n` witness `p` ↑ | 0.28222 (`n = 1`) <sup>e</sup> | **0.28466** (`n = 8`) | — <sup>†</sup> |
-| **Compilers** | [`sabre_qubit_routing`](InfinityMachineOutput/Sabre/) ([Zenodo](https://doi.org/10.5281/zenodo.23651580)) | added gates ↓ | 68,559 <sup>f</sup> | **12,087** | ✅ |
+| **Compilers** | [`sabre_qubit_routing`](InfinityMachineOutput/Sabre/) ([Zenodo](https://doi.org/10.5281/zenodo.23651579)) | added gates ↓ | 68,559 <sup>f</sup> | **12,087** | ✅ |
 | | same, 15 circuits shared with later work | added gates ↓ | 13,044 <sup>g</sup> | **9,312** | ✅ <sup>‡</sup> |
 | **Hardware** | [`int8_systolic_tile`](InfinityMachineOutput/Chip/) | energy per MAC ↓ | 578.9 fJ <sup>h</sup> | **128.8 fJ** | ✅ arithmetic <sup>§</sup> |
 | **AI** | AdderBoard smallest adder | parameters ↓ | 6 (disputed), 10 strict <sup>i</sup> | **5** | — |
