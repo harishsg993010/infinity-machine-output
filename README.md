@@ -194,9 +194,9 @@ If you use these results, please cite:
 
 ```bibtex
 @misc{infinitymachine2026,
-  title        = {Infinity Machine: a self-improving {AI} agent for research},
-  author       = {Santhanalakshmi Ganesan, Harish},
-  year         = {2026},
+  title         = {Infinity Machine: a self-improving {AI} agent for research},
+  author        = {Santhanalakshmi Ganesan, Harish},
+  year          = {2026},
   eprint        = {2610.35579},
   archivePrefix = {arXiv},
   url           = {https://arxiv.org/abs/2610.35579},
