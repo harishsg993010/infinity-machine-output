@@ -3,8 +3,9 @@
 Companion artifacts for **Infinity Machine**, a self-improving AI agent for research.
 
 This repository collects the concrete results Infinity Machine produced on open problems in quantum information,
-compilers and hardware design, together with **Lean 4 proofs** that check each result's certificate. Every
-certificate is taken unchanged from its public deposit, and generator scripts turn it into a Lean data file.
+compilers, hardware design and astronomy. Each result with a finite certificate comes with a **Lean 4 proof** that
+checks it. Every certificate is taken unchanged from its public deposit, and generator scripts turn it into a Lean
+data file.
 
 > 📝 Paper: *Infinity Machine: a self-improving AI agent for research* (H. Santhanalakshmi Ganesan, 2026), arXiv preprint in preparation.
 
